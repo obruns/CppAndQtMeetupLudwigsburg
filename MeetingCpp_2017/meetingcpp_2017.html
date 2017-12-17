@@ -46,6 +46,7 @@
 <li><a href="http://meetingcpp.com/2017/Schedule.html">Schedule</a></li>
 <li><a href="https://meetingcpp.com/2017/slides_meetingcpp_2017.zip">Slides (203MiB zip archive)</a></li>
 <li><a href="https://www.youtube.com/user/MeetingCPP/videos">Videos</a> (none uploaded, yet)</li>
+<li><a href="https://meetingcpp.com/2017/#tripreports">Trip Reports</a></li>
 <li>unofficial notes collection (none?)</li>
 </ul>
 </section>
@@ -63,8 +64,8 @@
 <section id="talks-i-should-have-seen-according-to-others" class="slide level2">
 <h2>Talks I should have seen (according to others)</h2>
 <ul>
-<li class="fragment">Felix Petriconi - <a href="http://meetingcpp.com/2017/talks/items/There_Is_A_New_Future.html">There Is A New Future</a></li>
-<li class="fragment">Kiki de Rooij, Peter Bindels - <a href="http://meetingcpp.com/2017/talks/items/Dealing_with_software_dependencies.html">Dealing with software dependencies</a></li>
+<li class="fragment">Felix Petriconi - <a href="http://meetingcpp.com/2017/talks/items/There_Is_A_New_Future.html">There Is A New Future</a> (<a href="http://cppcast.com/2017/06/felix-petriconi/">CppCast Episode 105</a>)</li>
+<li class="fragment">Kiki de Rooij, Peter Bindels - <a href="http://meetingcpp.com/2017/talks/items/Dealing_with_software_dependencies.html">Dealing with software dependencies</a> (<a href="http://cppcast.com/2017/04/peter-bindels/">CppCast Episode 98</a>)</li>
 <li class="fragment">Nicholas Ormrod - <a href="http://meetingcpp.com/2017/talks/items/Fantastic_Algorithms_and_Where_To_Find_Them.html">Fantastic Algorithms and Where To Find Them</a></li>
 <li class="fragment">André Bergner - <a href="http://meetingcpp.com/2017/talks/items/Reactive_Equations_.html">Reactive Equations</a></li>
 </ul>
@@ -72,12 +73,14 @@
 <section id="keynote---sean-parent-better-code-human-interface" class="slide level2">
 <h2>Keynote - Sean Parent Better Code: Human interface</h2>
 <ul>
-<li class="fragment">UX/UI in general</li>
-<li class="fragment">the GMail example (think: Windows since Windows 7)</li>
+<li class="fragment">&quot;moral imperative to write better code&quot;</li>
+<li class="fragment">&quot;huge amount of confusion in the community about MVC (or MVVM)&quot;</li>
+<li class="fragment">great talk for UX/UI in general</li>
+<li class="fragment">the GMail example</li>
 <li class="fragment">algorithms</li>
 <li class="fragment"><a href="http://sean-parent.stlab.cc/papers-and-presentations">Sean's other papers and presentations</a></li>
 <li class="fragment">imperative to declarative; also functional</li>
-<li class="fragment">reactive &lt;&lt; which of the two meanings?</li>
+<li class="fragment">&quot;we all were spoiled by imperative code&quot;</li>
 </ul>
 </section>
 <section id="guy-davidson---stdio2d" class="slide level2">
@@ -94,7 +97,10 @@
 <section id="ivan-čukić---functional-data-structures" class="slide level2">
 <h2>Ivan Čukić - Functional Data Structures</h2>
 <ul>
-<li class="fragment"></li>
+<li class="fragment">&quot;Functional Programming is just a collection of ideas&quot;</li>
+<li class="fragment">use sum types to avoid invalid states - std::variant</li>
+<li class="fragment">Tennis example</li>
+<li class="fragment">&quot;lists <em>were</em> popular in Functional Programming&quot;</li>
 </ul>
 </section>
 <section id="phil-nash---modern-c-testing-with-catch2" class="slide level2">
@@ -102,8 +108,8 @@
 <ul>
 <li><a href="https://www.youtube.com/watch?v=C2LcIp56i-8">2014@MeetingC++</a></li>
 <li>a lot has changed in Catch v1</li>
-<li>Catch2 came out just the other week</li>
-<li>future: microbenchmarks with Catch!?</li>
+<li><a href="http://www.levelofindirection.com/journal/2017/11/3/catch2-released.html">Catch2 came out just the other week</a></li>
+<li>future: <a href="https://github.com/catchorg/Catch2/blob/master/projects/SelfTest/UsageTests/Benchmark.tests.cpp">microbenchmarks with Catch!?</a></li>
 </ul>
 </section>
 <section id="joel-falcou---the-three-little-dots-and-the-big-bad-lambdas" class="slide level2">
@@ -111,43 +117,78 @@
 <ul>
 <li class="fragment">inspiration from MetaOCaml</li>
 <li class="fragment">templated code but <strong>used</strong> entirely without templates</li>
+<li class="fragment">from type-based to injection-based TMP</li>
 </ul>
 </section>
 <section id="keynote---kate-gregory---its-complicated" class="slide level2">
 <h2>Keynote - Kate Gregory - Its complicated!</h2>
 <ul>
 <li class="fragment"><a href="https://www.youtube.com/watch?v=YnWhqhNdYyk">Context: CppCon 2015: Kate Gregory “Stop Teaching C&quot;</a></li>
-<li class="fragment"></li>
+<li class="fragment">one third of the audience is on C++ Slack</li>
+<li class="fragment">more than one half has heard of the C++ Core Guidelines</li>
+<li class="fragment">about the same has read parts of it</li>
+<li class="fragment">less than a quarter has used them to support decisions</li>
+</ul>
+</section>
+<section id="contd" class="slide level2">
+<h2>cont'd</h2>
+<ul>
+<li class="fragment">&quot;use checkers to approach the core guidelines&quot;</li>
+<li class="fragment">&quot;never help without asking&quot;</li>
 </ul>
 </section>
 <section id="jason-turner---practical-constexpr" class="slide level2">
 <h2>Jason Turner - Practical constexpr</h2>
 <ul>
 <li class="fragment">this is not a rip-off of <a href="https://www.youtube.com/watch?v=PJwd4JLYJJY">CppCon 2017: Ben Deane &amp; Jason Turner “constexpr ALL the Things!”</a> he did with Ben Deane</li>
+<li class="fragment">magic static!?</li>
+<li class="fragment">constexpr implies inline</li>
+<li class="fragment">&quot;I like that if it compiles it passed all of our tests&quot;</li>
+<li class="fragment">static_assert on constexpr</li>
+<li class="fragment">prefer constexpr over static const =&gt; &quot;constexpr should be the new static const&quot;</li>
 </ul>
 </section>
 <section id="jens-weller---beginning-with-c-panel" class="slide level2">
 <h2>Jens Weller - Beginning with C++ (Panel)</h2>
 <ul>
-<li>Penalists</li>
+<li>Penalists
+<ul>
 <li>Kate Gregory</li>
 <li>Jason Turner</li>
 <li>Arne Mertz</li>
 <li>Rainer Grimm</li>
 <li>Wouter van Ooijen</li>
+</ul></li>
+<li>C++ as a first language?</li>
+<li>no conclusion</li>
 </ul>
 </section>
 <section id="kevlin-henney---declarative-thinking-declarative-practice" class="slide level2">
 <h2>Kevlin Henney - Declarative Thinking, Declarative Practice</h2>
 <ul>
-<li class="fragment">strong slot, have a look at the other ones</li>
-<li class="fragment"></li>
+<li class="fragment">declarative programming is a superset of FP</li>
+<li class="fragment"><a href="https://www.w3.org/DesignIssues/Principles">Tim Berners-Lee: Principles of Design</a></li>
+<li class="fragment"><code>make</code> as an example of declarative programming</li>
+<li class="fragment">&quot;it is not your job to do bookkeeping&quot;</li>
+<li class="fragment">the STL almost managed composability but failed due to iterators</li>
+<li class="fragment">(ranges TS is going to correct that; then: STL2)</li>
+</ul>
+</section>
+<section id="contd-1" class="slide level2">
+<h2>cont'd</h2>
+<ul>
+<li class="fragment">the contracts proposal does not give us much (stack example)</li>
+<li class="fragment">name const methods differently: pushed, popped</li>
+<li class="fragment">use GUT (&quot;good unit tests&quot;) rather than TDD</li>
+<li class="fragment">&quot;my tests are a data structure&quot;</li>
 </ul>
 </section>
 <section id="juan-pedro-bolívar-puente---the-most-valuable-values" class="slide level2">
 <h2>Juan Pedro Bolívar Puente - The most valuable values</h2>
 <ul>
-<li class="fragment"></li>
+<li class="fragment"><a href="https://github.com/arximboldi/immer">immer: immutable and persistent data structures</a></li>
+<li class="fragment"><a href="https://github.com/arximboldi/ewig">ewig: the eternal editor, ersatz emacs</a></li>
+<li class="fragment">overall rather philosophical</li>
 </ul>
 </section>
 <section id="arne-mertz-code-reviews---why-what-and-how" class="slide level2">
@@ -155,39 +196,57 @@
 <ul>
 <li>strong candidate for a code review primer (language-agnostic)</li>
 <li>great input from the audience during Q&amp;A at the end</li>
+<li>LGTM!?</li>
 <li><a href="https://arne-mertz.de/2017/12/code-reviews-why/">blog &quot;Code Reviews: Why?&quot;</a></li>
+<li><a href="https://arne-mertz.de/2017/12/code-reviews-what/">blog &quot;Code Reviews: What?&quot;</a></li>
 </ul>
 </section>
 <section id="alfred-bratterud---true-parallelism-with-no-concept-of-threads" class="slide level2">
 <h2>Alfred Bratterud - True parallelism with no concept of threads</h2>
 <ul>
-<li>context (CppCon 2016/2017: Alfred Bratterud)</li>
+<li>context (CppCon 2016/2017: Alfred Bratterud)
+<ul>
 <li><a href="https://www.youtube.com/watch?v=QMb4RRFrY-o">“Delegate this! Designing with delegates in modern C++”</a></li>
 <li><a href="https://www.youtube.com/watch?v=h7D88U-5pKc">“Deconstructing the OS: The devil’s In the side effects”</a></li>
 <li><a href="https://www.youtube.com/watch?v=t4etEwG2_LY">“#include <os>: from bootloader to REST API with the new C++&quot;</a></li>
+</ul></li>
+</ul>
+</section>
+<section id="contd-2" class="slide level2">
+<h2>cont'd</h2>
+<ul>
+<li>this is the most advanced talk, go watch the others first!</li>
+<li>the code was not public at the time</li>
 </ul>
 </section>
 <section id="lightning-talks-session-33" class="slide level2">
 <h2>Lightning Talks Session 3/3</h2>
 <ul>
-<li class="fragment"></li>
+<li>Accumulators</li>
+<li>Vendored Builds</li>
+<li>C++ High Perf</li>
+<li>The case for package managers</li>
+<li>The Stand Up</li>
+<li>Type punning done right</li>
 </ul>
 </section>
 <section id="secret-lightning-talks" class="slide level2">
 <h2>Secret Lightning Talks</h2>
 <ul>
-<li class="fragment">Sean Parent</li>
-<li class="fragment">Kate Gregory</li>
+<li class="fragment">Sean Parent: Tasks in ten</li>
+<li class="fragment">Kate Gregory: Five things I realized when I was supposed to die</li>
 <li class="fragment">learn to prioritze: when you have children, sleep whenever they sleep</li>
-<li class="fragment">J Guy Davidson Diversity and Inclusion</li>
-<li class="fragment">Rainer Grimm Lessons learned from publishing</li>
+<li class="fragment">J Guy Davidson: Diversity and Inclusion</li>
+<li class="fragment">Rainer Grimm: Lessons learned from publishing</li>
 <li class="fragment">Jens Weller: Science</li>
 </ul>
 </section>
 <section id="keynote---wouter-van-ooijen-what-can-c-offer-embedded-what-can-embedded-offer-c" class="slide level2">
 <h2>Keynote - Wouter van Ooijen What can C++ offer embedded, what can embedded offer C++?</h2>
 <ul>
-<li class="fragment"><a href="https://github.com/wovo/hwlib/blob/master/_push.bat">FAIL: abusing git</a></li>
+<li><a href="https://github.com/wovo/hwlib/blob/master/_push.bat">FAIL: abusing git</a></li>
+<li>the Ariane 5 disaster</li>
+<li>some STM32 code</li>
 </ul>
 </section>
     </div>
