@@ -1,0 +1,11 @@
+BasedOnStyle: LLVM
+AlignAfterOpenBracket: AlwaysBreak
+AllowShortFunctionsOnASingleLine: false
+AlwaysBreakTemplateDeclarations: true
+BraceWrapping:
+  AfterEnum: true
+  AfterClass: true
+  AfterStruct: true
+  SplitEmptyFunction: true
+
+# vim: filetype=yaml
